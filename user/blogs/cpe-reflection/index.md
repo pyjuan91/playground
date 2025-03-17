@@ -10,9 +10,8 @@ coverStyle: 'IN'
 series_tag:
 language: zh
 series_title:
-tag:
+tags:
   - CPE
-  - zh
   - Programming
 ---
 

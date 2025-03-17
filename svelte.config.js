@@ -24,9 +24,10 @@ const config = {
     },
     prerender: {
       entries: ['/en', '/ja', '/zh', '/zh-Hans', '/zh-Hant',
-        '/example',
-        '/hello-QWER',
-        '/quick-start',
+        // '/example',
+        // '/hello-QWER',
+        // '/quick-start',
+        '/cpe-reflection',
         '/versions.json'
       ]
     }

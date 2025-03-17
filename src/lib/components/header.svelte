@@ -193,7 +193,7 @@
           </div>
 
           <div class="ml-auto flex">
-            {#if $page.route?.id && ['/', '/[lang=lang]'].includes($page.route.id)}
+            <!-- {#if $page.route?.id && ['/', '/[lang=lang]'].includes($page.route.id)}
               {#key $page}
                 <button
                   id="search"
@@ -213,8 +213,8 @@
                   </label>
                 </button>
               {/key}
-            {/if}
-            {#if $page.route?.id && ['/', '/[lang=lang]'].includes($page.route.id)}
+            {/if} -->
+            <!-- {#if $page.route?.id && ['/', '/[lang=lang]'].includes($page.route.id)}
               <button
                 in:fade|global={{ duration: 300, delay: 300 }}
                 out:fade|global={{ duration: 300 }}
@@ -241,7 +241,7 @@
                   class:i-mdi-tag={!$tagsShowMobile}
                   class="!w7 !h7 group-hover:(transition-transform duration-300 scale-120 ease-in-out)" />
               </button>
-            {/if}
+            {/if} -->
             {#key $theme}
               <button
                 aria-label="Dark Mode Switch"
@@ -251,7 +251,7 @@
                   class="!w8 !h8 i-line-md-sunny-outline-loop dark:i-line-md-moon group-hover:(transition-transform duration-300 scale-120 ease-in-out)" />
               </button>
             {/key}
-            <LocaleSwitcher />
+            <!-- <LocaleSwitcher /> -->
           </div>
         </div>
       {/if}
