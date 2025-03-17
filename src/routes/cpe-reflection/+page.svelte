@@ -11,6 +11,19 @@
 
 <Post>
   <article slot="post_content">
+    <h3 id="medium-yuan2-wen2"><a href="#medium-yuan2-wen2">Medium 原文</a></h3>
+    <div class="my4 mx--8 sm:(mx0 rounded-2xl) flex gap4 items-center shadow-2xl bg-black/[0.25] px4 py6">
+      <div>
+        <div class="i-mdi-medium w6 h6" />
+      </div>
+      <div>
+        <h2 class="!p0 !m0 !text-[1rem] sm:!text-[1.25rem] !font-700 underline">
+          <a href="https://medium.com/@pyjuan91/cpe考試心得-準備-a84737223fde">cpe考試心得-準備</a>
+        </h2>
+        <p class="!p0 !m0 !text-[0.6rem] sm:!text-[0.8rem]">✒︎ 首考七題心得分享</p>
+      </div>
+    </div>
+
     <h3 id="kao3-sheng1-bei4-jing3"><a href="#kao3-sheng1-bei4-jing3">考生背景</a></h3>
     <p>114CS的普通大四生，因為快要畢業了，剛好蹭一下大學生免報名費的考試，血賺🈵</p>
     <p>
