@@ -36,7 +36,7 @@ export const siteConfig: Site.Config = {
     email: 'pyjuan91@gmail.com',
     bio: `Haerin's Big Fan`,
     linkedin: 'https://www.linkedin.com/in/poyujuan/',
-    medium: 'https://pyjuan91.medium.com/',
+    medium: 'https://medium.com/@pyjuan91',
     atcoder: 'https://atcoder.jp/users/zuhazana',
   },
 };
@@ -121,6 +121,7 @@ export const navConfig: NavConfigType =
       name: 'About',
       url: '/about',
     },
+ 
     // {
     //   name: 'Menu',
     //   links: [
