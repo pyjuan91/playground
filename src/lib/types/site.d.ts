@@ -43,6 +43,9 @@ export namespace Site {
     email?: string;
     twitter?: string;
     bio?: string;
+    linkedin?: string;
+    medium?: string;
+    atcoder?: string;
   }
 
   export type DateConfig = {

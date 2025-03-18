@@ -35,6 +35,9 @@ export const siteConfig: Site.Config = {
     github: 'https://github.com/pyjuan91',
     email: 'pyjuan91@gmail.com',
     bio: `Haerin's Big Fan`,
+    linkedin: 'https://www.linkedin.com/in/poyujuan/',
+    medium: 'https://pyjuan91.medium.com/',
+    atcoder: 'https://atcoder.jp/users/zuhazana',
   },
 };
 

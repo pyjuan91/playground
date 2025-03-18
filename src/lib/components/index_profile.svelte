@@ -63,6 +63,36 @@
         <div class="!w-[1.75rem] !h-[1.75rem] i-carbon-logo-twitter" />
       </a>
     {/if}
+    {#if siteConfig.author.linkedin}
+      <a
+        use:tippy
+        href={siteConfig.author.linkedin}
+        rel="author external"
+        class="u-url u-uid btn btn-ghost"
+        aria-label="LinkedIn">
+        <div class="!w-[1.75rem] !h-[1.75rem] i-carbon-logo-linkedin" />
+      </a>
+    {/if}
+    {#if siteConfig.author.medium}
+      <a
+        use:tippy
+        href={siteConfig.author.medium}
+        rel="author external"
+        class="u-url u-uid btn btn-ghost"
+        aria-label="Medium">
+        <div class="!w-[1.75rem] !h-[1.75rem] i-carbon-logo-medium" />
+      </a>
+    {/if}
+    {#if siteConfig.author.atcoder}
+      <a
+        use:tippy
+        href={siteConfig.author.atcoder}
+        rel="author external"
+        class="u-url u-uid btn btn-ghost"
+        aria-label="AtCoder">
+        <div class="!w-[1.75rem] !h-[1.75rem] i-mdi-format-text-variant-outline" />
+      </a>
+    {/if}
   </div>
 </section>
 
