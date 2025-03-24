@@ -164,7 +164,7 @@
           </div>
           <!-- Logo (Replace the src with your actual image link or local path) -->
           <img
-            src="https://scontent.ftpe3-1.fna.fbcdn.net/v/t39.30808-6/326796568_1313638412531487_5586862764192002393_n.png?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=SAHgaMOqVbsQ7kNvgHA5stx&_nc_oc=AdhJJQDKETIcnQfJSJJE64QwzycJjxVZE2faICepIE2n68ywJQEnlHSknJyEi2B1oeA&_nc_zt=23&_nc_ht=scontent.ftpe3-1.fna&_nc_gid=M6oF2CR_4EZRXDY5eeeJMQ&oh=00_AYF6JDT_Bn1ASsTB8DZR2XFSHdKK155Yf66cTSnvcQGUdA&oe=67DF784B"
+            src="https://media.cakeresume.com/image/upload/s--xl6aFWGL--/c_pad,fl_png8,h_400,w_400/v1594890273/ztfrcn5jli33qaw9bpsz.png"
             alt="Tomofun Logo"
             style="max-width: 90px; height: auto; border-radius: 6px;" />
         </div>
