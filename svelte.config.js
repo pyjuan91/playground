@@ -28,6 +28,7 @@ const config = {
         // '/hello-QWER',
         // '/quick-start',
         '/cpe-reflection',
+        '/vboxmanage',
         '/versions.json'
       ]
     }
