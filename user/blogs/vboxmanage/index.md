@@ -68,50 +68,49 @@ Success! We can now control the guest machine using just the command line from t
 
 ### Control
 
-:::info List virtual machines.
+**List virtual machines.**
 
 ```sh
 vboxmanage list vms
 ```
 
 ![screenshot3](./Screenshot3.png)
-:::
 
-:::info Boot up certain virtual machines.
+**Boot up certain virtual machines.**
 
 ```sh
 vboxmanage startvm "i-am-device-name"
 ```
 
 ![screenshot4](./Screenshot4.png)
-:::
 
-:::info Check every guest machine's status
+
+**Check every guest machine's status**
 
 ```sh
 vboxmanage list vms --long | grep -e "Name:" -e "State:"
 ```
 
 ![screenshot5](./Screenshot5.png)
-:::
+
 
 ### Core Execution
 
-:::info Copy a file (or an entire directory recursively) from the host to the guest machine
+**Copy a file (or an entire directory recursively) from the host to the guest machine**
 
 ```sh
 VBoxManage guestcontrol "i-am-device-name" copyto --target-directory "/home/i-am-user-name/test.cc" "/home/pyjuan91/test.cc" --username i-am-user-name --password 123456
 ```
-:::
 
-:::info PWD or LS or CD command
+
+**PWD or LS or CD command**
 
 ```sh
 VBoxManage guestcontrol "i-am-device-name" run --exe "/bin/ls" --username i-am-user-name --password 123456 --wait-stdout -- "/home/i-am-user-name"
 ```
 ![screenshot6](./Screenshot6.png)
 
-:::
+
 
 > You can find the details of each argument in Oracle’s official documentation. (Or, if you’re feeling adventurous, just observe our command and figure it out by analogy!)
 
@@ -121,24 +120,23 @@ VBoxManage guestcontrol "i-am-device-name" run --exe "/bin/ls" --username i-am-u
   We can see now test.cc is in the guest machine!
 </p>
 
-:::info Download GNU c++ compiler
+**Download GNU c++ compiler**
 Note that if you want to run **sudo** command, you have to write in shellscript format.
 
 ```sh
 VBoxManage guestcontrol "i-am-device-name" run --exe "/bin/sh" --username i-am-user-name --password 123456 --wait-stdout -- -c "echo '123456' | sudo -S apt install build-essential -y"
 ```
-:::
 
-:::info Checking the GCC/G++ Path
+
+**GCC/G++ Path**
 
 ```sh
 VBoxManage guestcontrol "i-am-device-name" run --exe "/bin/which" --username i-am-user-name --password 123456 --wait-stdout -- "g++"
 ```
 ![screenshot7](./Screenshot7.png)
 
-:::
 
-:::info Compile and Execute cc file
+**Compile and Execute cc file**
 
 ```sh
 VBoxManage guestcontrol "i-am-device-name" run --exe "/usr/bin/g++" --username i-am-user-name --password 123456 --wait-stdout -- "/home/i-am-user-name/test.cc" "-o" "/home/i-am-user-name/test"
@@ -149,7 +147,6 @@ VBoxManage guestcontrol "i-am-device-name" run --exe "/home/i-am-user-name/test"
 ```
 
 ![screenshot8](./Screenshot8.png)
-:::
 
 
 ### Shut Down

@@ -80,53 +80,46 @@
     <p><ImgZoom src="/vboxmanage/Screenshot2.png" alt="screenshot2"></ImgZoom></p>
     <p>Success! We can now control the guest machine using just the command line from the host!</p>
     <h3 id="control"><a href="#control">Control</a></h3>
-    <InfoBox statusType="info" statusName="List virtual machines.">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">vboxmanage list vms</div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <p><ImgZoom src="/vboxmanage/Screenshot3.png" alt="screenshot3"></ImgZoom></p>
-    </InfoBox>
-    <InfoBox statusType="info" statusName="Boot up certain virtual machines.">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">vboxmanage startvm <span class="token string">"i-am-device-name"</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <p><ImgZoom src="/vboxmanage/Screenshot4.png" alt="screenshot4"></ImgZoom></p>
-    </InfoBox>
-    <InfoBox statusType="info" statusName="Check every guest machine's status">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">vboxmanage list vms <span class="token parameter variable">--long</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-e</span> <span class="token string">"Name:"</span> <span class="token parameter variable">-e</span> <span class="token string">"State:"</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <p><ImgZoom src="/vboxmanage/Screenshot5.png" alt="screenshot5"></ImgZoom></p>
-    </InfoBox>
+    <p><strong>List virtual machines.</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">vboxmanage list vms</div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><ImgZoom src="/vboxmanage/Screenshot3.png" alt="screenshot3"></ImgZoom></p>
+    <p><strong>Boot up certain virtual machines.</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">vboxmanage startvm <span class="token string">"i-am-device-name"</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><ImgZoom src="/vboxmanage/Screenshot4.png" alt="screenshot4"></ImgZoom></p>
+    <p><strong>Check every guest machine&#39;s status</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">vboxmanage list vms <span class="token parameter variable">--long</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-e</span> <span class="token string">"Name:"</span> <span class="token parameter variable">-e</span> <span class="token string">"State:"</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><ImgZoom src="/vboxmanage/Screenshot5.png" alt="screenshot5"></ImgZoom></p>
     <h3 id="core-execution"><a href="#core-execution">Core Execution</a></h3>
-    <InfoBox
-      statusType="info"
-      statusName="Copy a file (or an entire directory recursively) from the host to the guest machine">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> copyto --target-directory <span class="token string">"/home/i-am-user-name/test.cc"</span> <span class="token string">"/home/pyjuan91/test.cc"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-    </InfoBox>
-    <InfoBox statusType="info" statusName="PWD or LS or CD command">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/bin/ls"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token string">"/home/i-am-user-name"</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <p><ImgZoom src="/vboxmanage/Screenshot6.png" alt="screenshot6"></ImgZoom></p>
-    </InfoBox>
+    <p><strong>Copy a file (or an entire directory recursively) from the host to the guest machine</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> copyto --target-directory <span class="token string">"/home/i-am-user-name/test.cc"</span> <span class="token string">"/home/pyjuan91/test.cc"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><strong>PWD or LS or CD command</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/bin/ls"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token string">"/home/i-am-user-name"</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><ImgZoom src="/vboxmanage/Screenshot6.png" alt="screenshot6"></ImgZoom></p>
     <blockquote>
       <p>
         You can find the details of each argument in Oracle’s official documentation. (Or, if you’re feeling
@@ -135,42 +128,40 @@
     </blockquote>
     <p class="text-3xl font-bold">We can see now test.cc is in the guest machine!</p>
 
-    <InfoBox statusType="info" statusName="Download GNU c++ compiler">
-      <p>
-        Note that if you want to run <strong>sudo</strong>
-         command, you have to write in shellscript format.
-      </p>
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/bin/sh"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token parameter variable">-c</span> <span class="token string">"echo '123456' | sudo -S apt install build-essential -y"</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-    </InfoBox>
-    <InfoBox statusType="info" statusName="Checking the GCC/G++ Path">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/bin/which"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token string">"g++"</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <p><ImgZoom src="/vboxmanage/Screenshot7.png" alt="screenshot7"></ImgZoom></p>
-    </InfoBox>
-    <InfoBox statusType="info" statusName="Compile and Execute cc file">
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/usr/bin/g++"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token string">"/home/i-am-user-name/test.cc"</span> <span class="token string">"-o"</span> <span class="token string">"/home/i-am-user-name/test"</span></div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <div class="code-block">
-        <CodeCopy>
-          <pre><code
-              class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/home/i-am-user-name/test"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout</div></div>`}</code></pre>
-        </CodeCopy>
-      </div>
-      <p><ImgZoom src="/vboxmanage/Screenshot8.png" alt="screenshot8"></ImgZoom></p>
-    </InfoBox>
+    <p>
+      <strong>Download GNU c++ compiler</strong>
+      Note that if you want to run
+      <strong>sudo</strong>
+       command, you have to write in shellscript format.
+    </p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/bin/sh"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token parameter variable">-c</span> <span class="token string">"echo '123456' | sudo -S apt install build-essential -y"</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><strong>GCC/G++ Path</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/bin/which"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token string">"g++"</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><ImgZoom src="/vboxmanage/Screenshot7.png" alt="screenshot7"></ImgZoom></p>
+    <p><strong>Compile and Execute cc file</strong></p>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/usr/bin/g++"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout -- <span class="token string">"/home/i-am-user-name/test.cc"</span> <span class="token string">"-o"</span> <span class="token string">"/home/i-am-user-name/test"</span></div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <div class="code-block">
+      <CodeCopy>
+        <pre><code
+            class="language-sh">{@html String.raw`<div class="code-line"><div class="code-linenotation"><span class="no-line-number"></span><span class="no-line-diff"></span></div><div class="code-content">VBoxManage guestcontrol <span class="token string">"i-am-device-name"</span> run <span class="token parameter variable">--exe</span> <span class="token string">"/home/i-am-user-name/test"</span> <span class="token parameter variable">--username</span> i-am-user-name <span class="token parameter variable">--password</span> <span class="token number">123456</span> --wait-stdout</div></div>`}</code></pre>
+      </CodeCopy>
+    </div>
+    <p><ImgZoom src="/vboxmanage/Screenshot8.png" alt="screenshot8"></ImgZoom></p>
     <h3 id="shut-down"><a href="#shut-down">Shut Down</a></h3>
     <div class="code-block">
       <CodeCopy>
