@@ -5,7 +5,7 @@ summary: A ProblemSet Tracker
 published: '2025-05-16T23:31:08.000+08:00'
 updated: '2025-05-16T23:31:08.000+08:00'
 cover: ./cover.png
-coverCaption: Photo by
+coverCaption: Bunnies Stan For NJ
 coverStyle: 'RIGHT'
 series_tag:
 series_title:
