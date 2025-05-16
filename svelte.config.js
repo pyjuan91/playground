@@ -29,7 +29,8 @@ const config = {
         // '/quick-start',
         '/cpe-reflection',
         '/vboxmanage',
-        '/versions.json'
+        '/versions.json',
+        '/0x3f_leetcode_dynamic_programming'
       ]
     }
   },

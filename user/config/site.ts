@@ -122,19 +122,19 @@ export const navConfig: NavConfigType =
       url: '/about',
     },
  
-    // {
-    //   name: 'Menu',
-    //   links: [
-    //     {
-    //       name: 'first',
-    //       url: '/first-page'
-    //     },
-    //     {
-    //       name: 'test',
-    //       url: '/test-page'
-    //     }
-    //   ]
-    // },
+    {
+      name: 'ProblemSet Tracker',
+      links: [
+        {
+          name: '0x3f - LeetCode - Dynamic Programming',
+          url: '/0x3f_leetcode_dynamic_programming'
+        },
+        // {
+        //   name: 'test',
+        //   url: '/test-page'
+        // }
+      ]
+    },
     // {
     //   name: 'See Docs 📄',
     //   url: 'https://docs-svelte-qwer.vercel.app/',
