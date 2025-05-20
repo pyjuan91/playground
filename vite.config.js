@@ -68,7 +68,8 @@ export default defineConfig({
     }),
     imagetools({
       // 排除所有 .gif 檔案，不參與最佳化
-      exclude: ['**/*.gif'],
+      include: ['**/*?*imagetools*'],
+      exclude: ['**/*.gif'] 
     }),
     sveltekit(),
     partytownVite({

@@ -1,7 +1,6 @@
 import type { Site } from '$lib/types/site';
 import type { Giscus } from '$lib/types/giscus';
 import type { DD } from '$lib/types/dd';
-
 import Avatar from '$assets/avatar.png';
 import Avatar_128 from '$assets/avatar.png?w=128&h=128&format=avif;webp&imagetools';
 import Avatar_48_PNG from '$assets/avatar.png?w=48&h=48&imagetools';
