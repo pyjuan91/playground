@@ -66,7 +66,10 @@ export default defineConfig({
         ],
       ],
     }),
-    imagetools(),
+    imagetools({
+      // 排除所有 .gif 檔案，不參與最佳化
+      exclude: ['**/*.gif'],
+    }),
     sveltekit(),
     partytownVite({
       dest: path.join(__dirname, outputFolderPath, '~partytown'),
