@@ -124,7 +124,7 @@ I’ll update this post as I make progress, including notes and solution links.
         {
           topic: "House Robber",
           name: "Delete and Earn",
-          id: 740
+          id: 740,
           url: "https://leetcode.com/problems/delete-and-earn/description/",
           solution: "https://leetcode.com/problems/delete-and-earn/submissions/1641239244",
           done: true
