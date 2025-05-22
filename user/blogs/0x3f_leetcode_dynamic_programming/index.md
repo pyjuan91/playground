@@ -86,8 +86,48 @@ I’ll update this post as I make progress, including notes and solution links.
           name: "Count Ways To Build Good Strings",
           id: 2466,
           url: "https://leetcode.com/problems/count-ways-to-build-good-strings/",
-          solution: "",
-          done: false
+          solution: "https://leetcode.com/problems/count-ways-to-build-good-strings/submissions/1641234461",
+          done: true
+        },
+        {
+          topic: "Climbing Stairs",
+          name: "Count Number of Texts",
+          id: 2266,
+          url: "https://leetcode.com/problems/count-number-of-texts/description/",
+          solution: "https://leetcode.com/problems/count-number-of-texts/submissions/1641235812",
+          done: true
+        },
+        {
+          topic: "House Robber",
+          name: "House Robber",
+          id: 198,
+          url: "https://leetcode.com/problems/house-robber/description/",
+          solution: "https://leetcode.com/problems/house-robber/submissions/1641237214",
+          done: true
+        },
+        {
+          topic: "House Robber",
+          name: "House Robber II",
+          id: 213,
+          url: "https://leetcode.com/problems/house-robber-ii/description/",
+          solution: "https://leetcode.com/problems/house-robber-ii/submissions/1641237709",
+          done: true
+        },
+        {
+          topic: "House Robber",
+          name: "Count Number of Ways to Place Houses",
+          id: 2320,
+          url: "https://leetcode.com/problems/count-number-of-ways-to-place-houses/description//",
+          solution: "https://leetcode.com/problems/count-number-of-ways-to-place-houses/submissions/1641238415",
+          done: true
+        },
+        {
+          topic: "House Robber",
+          name: "Delete and Earn",
+          id: 740
+          url: "https://leetcode.com/problems/delete-and-earn/description/",
+          solution: "https://leetcode.com/problems/delete-and-earn/submissions/1641239244",
+          done: true
         },
       ] as prob}
       <tr>
