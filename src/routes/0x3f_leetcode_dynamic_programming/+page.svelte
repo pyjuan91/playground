@@ -60,7 +60,40 @@
               </tr>
             </thead>
             <tbody>
-              {#each [{ topic: 'Climbing Stairs', name: 'Climbing Stairs', id: 70, url: 'https://leetcode.com/problems/climbing-stairs', solution: 'https://leetcode.com/problems/climbing-stairs/submissions/1149915155', done: true }, { topic: 'Climbing Stairs', name: 'Min Cost Climbing Stairs', id: 746, url: 'https://leetcode.com/problems/min-cost-climbing-stairs/', solution: 'https://leetcode.com/problems/min-cost-climbing-stairs/submissions/937508226', done: true }, { topic: 'Climbing Stairs', name: 'Combination Sum IV', id: 377, url: 'https://leetcode.com/problems/combination-sum-iv/', solution: 'https://leetcode.com/problems/combination-sum-iv/submissions/1635703587', done: true }, { topic: 'Climbing Stairs', name: 'Count Ways To Build Good Strings', id: 2466, url: 'https://leetcode.com/problems/count-ways-to-build-good-strings/', solution: 'https://leetcode.com/problems/count-ways-to-build-good-strings/submissions/1641234461', done: true }, { topic: 'Climbing Stairs', name: 'Count Number of Texts', id: 2266, url: 'https://leetcode.com/problems/count-number-of-texts/description/', solution: 'https://leetcode.com/problems/count-number-of-texts/submissions/1641235812', done: true }, { topic: 'House Robber', name: 'House Robber', id: 198, url: 'https://leetcode.com/problems/house-robber/description/', solution: 'https://leetcode.com/problems/house-robber/submissions/1641237214', done: true }, { topic: 'House Robber', name: 'House Robber II', id: 213, url: 'https://leetcode.com/problems/house-robber-ii/description/', solution: 'https://leetcode.com/problems/house-robber-ii/submissions/1641237709', done: true }, { topic: 'House Robber', name: 'Count Number of Ways to Place Houses', id: 2320, url: 'https://leetcode.com/problems/count-number-of-ways-to-place-houses/description//', solution: 'https://leetcode.com/problems/count-number-of-ways-to-place-houses/submissions/1641238415', done: true }, { topic: 'House Robber', name: 'Delete and Earn', id: 740, url: 'https://leetcode.com/problems/delete-and-earn/description/', solution: 'https://leetcode.com/problems/delete-and-earn/submissions/1641239244', done: true }] as prob}
+              {#each [{ topic: 'Climbing Stairs', name: 'Climbing Stairs', id: 70, url: 'https://leetcode.com/problems/climbing-stairs', solution: 'https://leetcode.com/problems/climbing-stairs/submissions/1149915155', done: true }, { topic: 'Climbing Stairs', name: 'Min Cost Climbing Stairs', id: 746, url: 'https://leetcode.com/problems/min-cost-climbing-stairs/', solution: 'https://leetcode.com/problems/min-cost-climbing-stairs/submissions/937508226', done: true }, { topic: 'Climbing Stairs', name: 'Combination Sum IV', id: 377, url: 'https://leetcode.com/problems/combination-sum-iv/', solution: 'https://leetcode.com/problems/combination-sum-iv/submissions/1635703587', done: true }, { topic: 'Climbing Stairs', name: 'Count Ways To Build Good Strings', id: 2466, url: 'https://leetcode.com/problems/count-ways-to-build-good-strings/', solution: 'https://leetcode.com/problems/count-ways-to-build-good-strings/submissions/1641234461', done: true }, { topic: 'Climbing Stairs', name: 'Count Number of Texts', id: 2266, url: 'https://leetcode.com/problems/count-number-of-texts/description/', solution: 'https://leetcode.com/problems/count-number-of-texts/submissions/1641235812', done: true }] as prob}
+                <tr>
+                  <td style="text-align: center; padding: 10px; border: 1px solid #e6ee9c;">
+                    <input type="checkbox" bind:checked={prob.done} />
+                  </td>
+                  <td style="padding: 10px; border: 1px solid #e6ee9c;">{prob.topic}</td>
+                  <td style="padding: 10px; border: 1px solid #e6ee9c;">
+                    <a href={prob.url} target="_blank" style="color: #000 !important;">#{prob.id} {prob.name}</a>
+                  </td>
+                  <td style="padding: 10px; border: 1px solid #e6ee9c;">
+                    {#if prob.solution !== ''}
+                      <a href={prob.solution} target="_blank" style="color: #000 !important;">Link</a>
+                    {:else}
+                      <em style="color: #999;">(Happy Birthday, Haerin)</em>
+                    {/if}
+                  </td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+
+          <p style="color: #33691e;">1.2 House Robber</p>
+
+          <table style="width: 100%; border-collapse: collapse; background: #ffffff;">
+            <thead style="background-color: #dcedc8;">
+              <tr>
+                <th style="padding: 10px; border: 1px solid #c5e1a5;">✅</th>
+                <th style="padding: 10px; border: 1px solid #c5e1a5;">Topic</th>
+                <th style="padding: 10px; border: 1px solid #c5e1a5;">Problem</th>
+                <th style="padding: 10px; border: 1px solid #c5e1a5;">My Submission</th>
+              </tr>
+            </thead>
+            <tbody>
+              {#each [{ topic: 'House Robber', name: 'House Robber', id: 198, url: 'https://leetcode.com/problems/house-robber/description/', solution: 'https://leetcode.com/problems/house-robber/submissions/1641237214', done: true }, { topic: 'House Robber', name: 'House Robber II', id: 213, url: 'https://leetcode.com/problems/house-robber-ii/description/', solution: 'https://leetcode.com/problems/house-robber-ii/submissions/1641237709', done: true }, { topic: 'House Robber', name: 'Count Number of Ways to Place Houses', id: 2320, url: 'https://leetcode.com/problems/count-number-of-ways-to-place-houses/description//', solution: 'https://leetcode.com/problems/count-number-of-ways-to-place-houses/submissions/1641238415', done: true }, { topic: 'House Robber', name: 'Delete and Earn', id: 740, url: 'https://leetcode.com/problems/delete-and-earn/description/', solution: 'https://leetcode.com/problems/delete-and-earn/submissions/1641239244', done: true }, { topic: 'House Robber', name: 'Maximum Total Damage With Spell Casting', id: 3186, url: 'https://leetcode.com/problems/maximum-total-damage-with-spell-casting/description/', solution: 'https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1696041440/', done: true }, { topic: 'House Robber', name: 'Solving Questions With Brainpower', id: 2140, url: 'https://leetcode.com/problems/solving-questions-with-brainpower/description/', solution: 'https://leetcode.com/problems/solving-questions-with-brainpower/submissions/1696040171/', done: true }] as prob}
                 <tr>
                   <td style="text-align: center; padding: 10px; border: 1px solid #e6ee9c;">
                     <input type="checkbox" bind:checked={prob.done} />

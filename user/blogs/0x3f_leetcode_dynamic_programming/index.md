@@ -97,6 +97,40 @@ I’ll update this post as I make progress, including notes and solution links.
           solution: "https://leetcode.com/problems/count-number-of-texts/submissions/1641235812",
           done: true
         },
+      ] as prob}
+      <tr>
+        <td style="text-align: center; padding: 10px; border: 1px solid #e6ee9c;">
+          <input type="checkbox" bind:checked={prob.done} />
+        </td>
+        <td style="padding: 10px; border: 1px solid #e6ee9c;"> {prob.topic} </td>
+        <td style="padding: 10px; border: 1px solid #e6ee9c;">
+          <a href={prob.url} target="_blank" style="color: #000 !important;"> #{prob.id} {prob.name} </a>
+        </td>
+        <td style="padding: 10px; border: 1px solid #e6ee9c;">
+          {#if prob.solution !== ""}
+            <a href={prob.solution} target="_blank" style="color: #000 !important;"> Link</a>
+          {:else}
+            <em style="color: #999;">(Happy Birthday, Haerin)</em>
+          {/if}
+        </td>
+      </tr>
+      {/each}
+    </tbody>
+  </table>
+
+  <p style="color: #33691e;">1.2 House Robber </p>
+
+  <table style="width: 100%; border-collapse: collapse; background: #ffffff;">
+    <thead style="background-color: #dcedc8;">
+      <tr>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;">✅</th>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;">Topic</th>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;">Problem</th>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;"> My Submission </th>
+      </tr>
+    </thead>
+    <tbody>
+      {#each [
         {
           topic: "House Robber",
           name: "House Robber",
@@ -127,6 +161,22 @@ I’ll update this post as I make progress, including notes and solution links.
           id: 740,
           url: "https://leetcode.com/problems/delete-and-earn/description/",
           solution: "https://leetcode.com/problems/delete-and-earn/submissions/1641239244",
+          done: true
+        },
+        {
+          topic: "House Robber",
+          name: "Maximum Total Damage With Spell Casting",
+          id: 3186,
+          url: "https://leetcode.com/problems/maximum-total-damage-with-spell-casting/description/",
+          solution: "https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1696041440/",
+          done: true
+        },
+        {
+          topic: "House Robber",
+          name: "Solving Questions With Brainpower",
+          id: 2140,
+          url: "https://leetcode.com/problems/solving-questions-with-brainpower/description/",
+          solution: "https://leetcode.com/problems/solving-questions-with-brainpower/submissions/1696040171/",
           done: true
         },
       ] as prob}
