@@ -23,22 +23,27 @@ const config = {
       $i18n: './src/i18n',
     },
     prerender: {
-      entries: ['/en', '/ja', '/zh', '/zh-Hans', '/zh-Hant',
+      entries: [
+        '/en',
+        '/ja',
+        '/zh',
+        '/zh-Hans',
+        '/zh-Hant',
         // '/example',
         // '/hello-QWER',
         // '/quick-start',
         '/cpe-reflection',
         '/vboxmanage',
         '/versions.json',
-        '/0x3f_leetcode_dynamic_programming'
-      ]
-    }
+        '/0x3f_leetcode_dynamic_programming',
+      ],
+    },
   },
 };
 
 function getAdapter() {
   if (Object.keys(process.env).some((key) => key.includes('VERCEL'))) {
-    return adapterVercel();
+    return adapterVercel({ runtime: 'nodejs22.x' });
   } else if (Object.keys(process.env).some((key) => key.includes('NETLIFY'))) {
     return adapterNetlify();
   } else if (Object.keys(process.env).some((key) => key.includes('CF_PAGES'))) {
