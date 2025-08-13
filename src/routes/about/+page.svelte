@@ -186,7 +186,8 @@
 
         <!-- Award Item: Collegiate Programming Examination Expert Level -->
         <div style="margin: 1em 0; padding: 1em; background: #fce4fd; border: 1px solid #ce93d8; border-radius: 8px;">
-          Collegiate Programming Examination Expert Level – Top 0.8% of over 2500 participants (May 2024)
+          Collegiate Programming Examination Expert Level – 7 / 7 Problems solved, top 0.8% of over 2500 participants
+          (May 2024)
         </div>
       </div>
 

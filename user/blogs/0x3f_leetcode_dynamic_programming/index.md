@@ -199,4 +199,102 @@ I’ll update this post as I make progress, including notes and solution links.
       {/each}
     </tbody>
   </table>
+
+  <p style="color: #33691e;">1.3 Maximum Subarray </p>
+
+  <table style="width: 100%; border-collapse: collapse; background: #ffffff;">
+    <thead style="background-color: #dcedc8;">
+      <tr>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;">✅</th>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;">Topic</th>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;">Problem</th>
+        <th style="padding: 10px; border: 1px solid #c5e1a5;"> My Submission </th>
+      </tr>
+    </thead>
+    <tbody>
+      {#each [
+        {
+          topic: "Maximum Subarray",
+          name: "Maximum Subarray",
+          id: 53,
+          url: "https://leetcode.com/problems/maximum-subarray/description/",
+          solution: "https://leetcode.com/problems/maximum-subarray/submissions/794567138",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "Find the Substring With Maximum Cost",
+          id: 2606,
+          url: "https://leetcode.com/problems/find-the-substring-with-maximum-cost/description/",
+          solution: "https://leetcode.com/problems/find-the-substring-with-maximum-cost/submissions/1733223316",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "Maximum Absolute Sum of Any Subarray",
+          id: 1749,
+          url: "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/description/",
+          solution: "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/submissions/1733224554",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "K-Concatenation Maximum Sum",
+          id: 1191,
+          url: "https://leetcode.com/problems/k-concatenation-maximum-sum/description/",
+          solution: "https://leetcode.com/problems/k-concatenation-maximum-sum/submissions/1733226015",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "Maximum Sum Circular Subarray",
+          id: 918,
+          url: "https://leetcode.com/problems/maximum-sum-circular-subarray/description/",
+          solution: "https://leetcode.com/problems/maximum-sum-circular-subarray/submissions/1733227017",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "Maximum Score Of Spliced Array",
+          id: 2321,
+          url: "https://leetcode.com/problems/maximum-score-of-spliced-array/description/",
+          solution: "https://leetcode.com/problems/maximum-score-of-spliced-array/submissions/1733228174",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "Maximum Product Subarray",
+          id: 152,
+          url: "https://leetcode.com/problems/maximum-product-subarray/description/",
+          solution: "https://leetcode.com/problems/maximum-product-subarray/submissions/1733229493",
+          done: true
+        },
+        {
+          topic: "Maximum Subarray",
+          name: "Maximum Subarray Sum with One Deletion",
+          id: 1186,
+          url: "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/",
+          solution: "",
+          done: false
+        },
+      ] as prob}
+      <tr>
+        <td style="text-align: center; padding: 10px; border: 1px solid #e6ee9c;">
+          <input type="checkbox" bind:checked={prob.done} />
+        </td>
+        <td style="padding: 10px; border: 1px solid #e6ee9c;"> {prob.topic} </td>
+        <td style="padding: 10px; border: 1px solid #e6ee9c;">
+          <a href={prob.url} target="_blank" style="color: #000 !important;"> #{prob.id} {prob.name} </a>
+        </td>
+        <td style="padding: 10px; border: 1px solid #e6ee9c;">
+          {#if prob.solution !== ""}
+            <a href={prob.solution} target="_blank" style="color: #000 !important;"> Link</a>
+          {:else}
+            <em style="color: #999;">(Happy Birthday, Haerin)</em>
+          {/if}
+        </td>
+      </tr>
+      {/each}
+    </tbody>
+  </table>
 </div>
